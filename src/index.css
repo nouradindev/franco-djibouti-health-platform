@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 213 35% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 35% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 35% 12%;
+
+    --primary: 197 72% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 197 30% 94%;
+    --secondary-foreground: 197 60% 20%;
+
+    --muted: 150 15% 95%;
+    --muted-foreground: 200 15% 40%;
+
+    --accent: 150 55% 35%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 197 20% 88%;
+    --input: 197 20% 88%;
+    --ring: 197 72% 45%;
+
+    --radius: 0.5rem;
+
+    --djibouti-blue: 197 72% 55%;
+    --djibouti-green: 150 55% 35%;
+    --djibouti-red: 0 75% 50%;
+    --djibouti-white: 0 0% 100%;
+
+    --sidebar-background: 213 45% 15%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 197 72% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 213 40% 22%;
+    --sidebar-accent-foreground: 210 20% 95%;
+    --sidebar-border: 213 35% 22%;
+    --sidebar-ring: 197 72% 55%;
+
+    --admin-bg: 210 25% 96%;
+    --admin-header: 213 45% 15%;
+  }
+
+  .dark {
+    --background: 213 35% 8%;
+    --foreground: 210 20% 96%;
+
+    --card: 213 35% 12%;
+    --card-foreground: 210 20% 96%;
+
+    --popover: 213 35% 12%;
+    --popover-foreground: 210 20% 96%;
+
+    --primary: 197 60% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 197 25% 18%;
+    --secondary-foreground: 197 30% 90%;
+
+    --muted: 197 20% 16%;
+    --muted-foreground: 197 15% 60%;
+
+    --accent: 150 45% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 197 25% 22%;
+    --input: 197 25% 22%;
+    --ring: 197 60% 55%;
+
+    --djibouti-blue: 197 60% 50%;
+    --djibouti-green: 150 45% 40%;
+    --djibouti-red: 0 70% 48%;
+    --djibouti-white: 0 0% 90%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Public Sans', system-ui, sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
